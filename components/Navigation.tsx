@@ -49,7 +49,7 @@ const Navigation: React.FC = () => {
 				<div className='flex flex-row w-full md:w-[65%] lg:w-[50%]'>
 					<div className='flex flex-row items-center justify-between w-full px-4'>
 						<div className='flex flex-row items-center gap-2'>
-							<Image src={logo} alt="logo" className="w-10 h-10 transition duration-300 hover:rotate-12" />
+							<Image src={logo} alt="logo" className="w-10 h-10 transition duration-300 hover:rotate-[20deg]" />
 							<p className='text-lg font-bold text-white'>Lionel Arce</p>
 						</div>
 						<button className='md:hidden' onClick={() => toggleSidebar()}>
@@ -60,7 +60,7 @@ const Navigation: React.FC = () => {
 							{links.map(({ label, route }) => (
 								<li
 									key={route}
-									className="mx-2 text-xs font-bold text-white transition duration-200 rounded-sm hover:text-white hover:bg-[rgb(43,43,43)]">
+									className="mx-2 text-xs font-bold text-white transition duration-200 rounded-md hover:text-white hover:bg-[rgb(43,43,43)]">
 									<Link href={route}>
 										<p className="px-4 py-2">{label}</p>
 									</Link>

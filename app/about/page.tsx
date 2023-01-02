@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <div className="flex items-center justify-center w-full h-full min-h-screen bg-[#101010]">
 			<div className="z-10 flex flex-col justify-center w-full text-white pt-20 md:w-[50vw] lg:w-[40vw] px-6">
-				<div className="flex flex-col items-center text-[rgb(220,220,220)] content-center self-center bg-[rgb(31,31,31)] justify-center p-2 text-2xl font-bold text-center bg-transparent rounded-md backdrop-blur-sm">
+				<div className="flex flex-col items-center text-[rgb(220,220,220)] content-center self-center bg-[rgb(31,31,31)] justify-center md:text-2xl font-bold text-center rounded-full py-2 px-2 md:px-6 md:py-3 backdrop-blur-sm">
 					I&apos;m a Software Developer based in Argentina
 				</div>
 				<div className="mt-24">
@@ -15,7 +15,7 @@ const About: React.FC = () => {
 				</div>
 				<div className="pt-8 md:px-0">
 					<strong className="my-4 text-lg border-b border-b-white text-[rgb(230,230,230)]">Work</strong>
-					<p className="pt-4 text-justify text-[rgb(230,230,230)]">Hi! My name is Lionel and I am a student of computer engineering and a fullstack software developer. Recently, I completed a fullstack web development bootcamp where I learned a wide range of technologies, including React, Next.js, TypeScript, Node.js, Express, and PostgreSQL. Currently, I am also learning Java and Spring Boot for backend services and AWS for cloud computing.</p>
+					<p className="pt-4 text-justify text-[rgb(230,230,230)]">Hi! My name is Lionel and I am a student of computer engineering and a fullstack software developer. Recently, I completed a fullstack web development bootcamp called soyHenry where I learned a wide range of technologies, including React, Next.js, TypeScript, Node.js, Express, and PostgreSQL. Currently, I am also learning Java and Spring Boot for backend services and AWS for cloud computing.</p>
 					<p className="pt-4 text-justify text-[rgb(230,230,230)]">In addition to my technical skills, I am also a strong problem solver and have excellent communication and collaboration skills. As a software developer, I am always looking to learn and improve my skills, and I am excited to bring my passion and expertise to any project I work on.</p>
 				</div>
 				<div className='flex items-center justify-center w-full gap-6'>
