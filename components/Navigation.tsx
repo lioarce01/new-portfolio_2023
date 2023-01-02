@@ -32,7 +32,7 @@ const Navigation: React.FC = () => {
 	
   return (
 		<>
-		<div className={`${toggle ? "w-full h-[80%] transition duration-200" : "hidden transition duration-200"} z-50 absolute bg-transparent backdrop-blur-sm lg:hidden transition-all duration-200`}>
+		<div className={`${toggle ? "w-full h-[80%] transition duration-200" : "hidden transition duration-200"} z-50 fixed bg-transparent backdrop-blur-sm lg:hidden transition-all duration-200`}>
 			<div className='flex justify-end w-full pt-2 pr-1'>
 				<button className='p-2 m-2 outline-none rounded-full hover:bg-[rgb(46,46,46)] transition duration-200 text-white self-center content-center' onClick={() => toggleSidebar()}><AiOutlineClose className='w-5 h-5'/></button>
 			</div>
@@ -60,7 +60,7 @@ const Navigation: React.FC = () => {
 							{links.map(({ label, route }) => (
 								<li
 									key={route}
-									className="mx-2 text-xs font-bold text-white transition duration-200 rounded-md hover:text-white hover:bg-[rgb(43,43,43)]">
+									className="mx-2 text-xs font-bold text-white transition duration-200 rounded-md hover:text-white hover:bg-[rgb(51,51,51)]">
 									<Link href={route}>
 										<p className="px-4 py-2">{label}</p>
 									</Link>
