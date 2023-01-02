@@ -45,7 +45,7 @@ const Navigation: React.FC = () => {
 				</li>
 			</ul>
 		</div>
-			<div className="fixed z-40 flex items-center justify-center w-full py-4 bg-black">
+			<div className="fixed z-40 flex items-center justify-center w-full py-4 bg-transparent backdrop-blur-sm">
 				<div className='flex flex-row w-full md:w-[65%] lg:w-[50%]'>
 					<div className='flex flex-row items-center justify-between w-full px-4'>
 						<div className='flex flex-row items-center gap-2'>
@@ -60,7 +60,7 @@ const Navigation: React.FC = () => {
 							{links.map(({ label, route }) => (
 								<li
 									key={route}
-									className="mx-2 text-xs font-bold text-white transition duration-200 rounded-sm hover:text-white hover:bg-[rgb(87,87,87)]">
+									className="mx-2 text-xs font-bold text-white transition duration-200 rounded-sm hover:text-white hover:bg-[rgb(43,43,43)]">
 									<Link href={route}>
 										<p className="px-4 py-2">{label}</p>
 									</Link>

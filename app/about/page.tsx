@@ -1,10 +1,10 @@
+'use client'
 import React from 'react';
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai"
 
-
 const About: React.FC = () => {
   return (
-    <div className="flex items-center justify-center w-full h-full min-h-screen bg-black">
+    <div className="flex items-center justify-center w-full h-full min-h-screen bg-[#101010]">
 			<div className="z-10 flex flex-col justify-center w-full text-white pt-20 md:w-[50vw] lg:w-[40vw] px-6">
 				<div className="flex flex-col items-center text-[rgb(220,220,220)] content-center self-center bg-[rgb(31,31,31)] justify-center p-2 text-2xl font-bold text-center bg-transparent rounded-md backdrop-blur-sm">
 					I&apos;m a Software Developer based in Argentina
