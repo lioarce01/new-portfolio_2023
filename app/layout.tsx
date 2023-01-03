@@ -1,4 +1,5 @@
-import Navigation from '../components/Navigation'
+'use client'
+import Navigation from '../components/Navigation';
 import '../styles/globals.css'
 
 export default function RootLayout({
@@ -6,13 +7,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
-    <html>
-      <head />
-      <body>
-        <Navigation/>
-        {children}
-      </body>
-    </html>
+      <html>
+        <head />
+        <body>
+          <Navigation/>
+          {children}
+        </body>
+      </html>
   )
 }

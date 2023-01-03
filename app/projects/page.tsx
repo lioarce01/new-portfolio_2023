@@ -1,8 +1,37 @@
+'use client'
 import React from 'react';
+import ProjectCard from '../../components/ProjectCard';
+import { projects } from "../../projects"
 
-const Projects: React.FC = () => {
+const Projects = (): JSX.Element => {
+
+  interface projectId {
+    id: number
+  }
+
+  projects.sort((a: projectId, b: projectId) => b.id - a.id)
+
   return (
-    <h1>projects</h1>
+    <div className='flex items-center justify-center w-full h-full min-h-screen bg-[#202020] pt-20 pb-4'>
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 md:w-[90%] lg:w-[70%] px-4">
+        {
+          projects && projects.map((project) => (
+            <div key={project.id}>
+              <ProjectCard
+                id={project.id}
+                name={project.name}
+                description={project.description}
+                technologies={project.technologies}
+                stack={project.stack}
+                github={project.github}
+                deploy={project.deploy}
+                image={project.image}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
   );
 };
 
