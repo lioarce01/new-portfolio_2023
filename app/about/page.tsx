@@ -1,11 +1,12 @@
 'use client'
 import React from 'react';
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai"
+import "../../styles/globals.css"
 
 const About: React.FC = () => {
   return (
     <div className="flex items-center justify-center w-full h-full min-h-screen bg-[#202020]">
-			<div className="z-10 flex flex-col justify-center w-full text-white pt-20 md:w-[50vw] lg:w-[40vw] px-6">
+			<div className="z-10 flex flex-col justify-center w-full text-white pt-20 md:w-[50vw] lg:w-[40vw] px-6" id="fadeAndMove">
 				<div className="flex flex-col items-center text-[rgb(220,220,220)] content-center self-center bg-[rgb(31,31,31)] justify-center md:text-2xl font-bold text-center rounded-lg py-2 px-2 md:px-6 md:py-3 backdrop-blur-sm">
 					I&apos;m a Software Developer based in Argentina
 				</div>
